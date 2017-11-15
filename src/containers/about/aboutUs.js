@@ -1,6 +1,15 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const AboutUs = ({ name, occupation, yearsActive, thingsWeDo }) => {
+
+  // Below is completely equivalent
+  // could also do...
+
+  // const AboutUs = ({ props }) => {
+  // const { name, occupation, yearsActive, thingsWeDo } = props;
+
+  // -------------
 
   /**
    * Showing different elements based on a value is easy
@@ -22,7 +31,7 @@ const AboutUs = ({ name, occupation, yearsActive, thingsWeDo }) => {
         </div>
       )
     }
-    return <div>Some other stuff</div>
+    return <div />
   }
 
   return (
@@ -33,6 +42,33 @@ const AboutUs = ({ name, occupation, yearsActive, thingsWeDo }) => {
       {doWeHaveJobs(thingsWeDo)}
     </div>
   )
+};
+
+/**
+ * PropTypes: are used to express what the component expects to see in terms of props
+ * --> Line 28: Props can be set to be required by setting `X.isRequired`
+ */
+AboutUs.propTypes = {
+  // exampleProp: PropTypes.object.isRequired,
+  name: PropTypes.string.isRequired,
+  occupation: PropTypes.string.isRequired,
+  yearsActive: PropTypes.number,
+  thingsWeDo: PropTypes.arrayOf(
+    PropTypes.shape({
+      job: PropTypes.string,
+      description: PropTypes.string,
+    })
+  ),
+};
+
+/**
+ * defaultProps: prop defaults
+ * --> These are the props the component will use if it is not passed a prop of that type
+ */
+AboutUs.defaultProps = {
+  name: "John Doe",
+  occupation: "Does Nothing",
+  yearsActive: 0,
 };
 
 export default AboutUs;
