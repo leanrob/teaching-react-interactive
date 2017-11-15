@@ -10,7 +10,12 @@ Pull the 1.1 Tag of the master branch
 
 --> Open the file `src/app/index.js`
 
+#### 1.1.1 Logic to choose components
+
+--> Open file `src/containers/about/aboutUs.js`
+
 ### 1.2 Props and State
+
 
 
 
