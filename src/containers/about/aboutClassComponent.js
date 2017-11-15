@@ -8,6 +8,11 @@ export class AboutUsClassComponent extends Component {
      * [http://busypeoples.github.io/post/react-component-lifecycle/](Lifecycle Methods)
 	 */
 
+	constructor(props) {
+	  super(props)
+    this.handleClick = 
+  }
+
 	// This one will show on page load
   componentWillMount() {
     // Fired just BEFORE the component mounts on the virtual DOM
@@ -21,8 +26,10 @@ export class AboutUsClassComponent extends Component {
   }
 
   // This one will NOT show on page load
+  // This can be used to tell a component not to update, even if it's parent component is updating
   shouldComponentUpdate() {
     console.log('Should component update');
+    return true;
   }
 
   // This one will NOT show on page load
@@ -36,7 +43,7 @@ export class AboutUsClassComponent extends Component {
   }
 
   // This one will NOT show on page load
-  componentWillReceiveProps() {
+  componentWillReceiveProps(prevProps, nextProps) {
     console.log('Component receive props');
   }
 
