@@ -1,6 +1,7 @@
 import React from 'react'
 
 import AboutUs from './aboutUs'
+import { AboutUsClassComponent } from './aboutClassComponent'
 
 let name= "rob";
 let occupation = "Software Developer";
@@ -23,5 +24,6 @@ export default () => (
     <AboutUs name={name} occupation={occupation} yearsActive={years} thingsWeDo={thingsToDo}/>
     <br />
     <AboutUs />
+    <AboutUsClassComponent />
   </div>
 )
