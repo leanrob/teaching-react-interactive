@@ -10,7 +10,7 @@ export class AboutUsClassComponent extends Component {
 
 	constructor(props) {
 	  super(props)
-    this.handleClick = 
+    this.handleClick = this.handleClick.bind(this)
   }
 
 	// This one will show on page load
@@ -26,8 +26,8 @@ export class AboutUsClassComponent extends Component {
   }
 
   // This one will NOT show on page load
-  // This can be used to tell a component not to update, even if it's parent component is updating
   shouldComponentUpdate() {
+    // This can be used to tell a component not to update, even if it's parent component is updating
     console.log('Should component update');
     return true;
   }

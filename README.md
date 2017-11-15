@@ -46,6 +46,16 @@ Pull the 1.2.1 tag of the master branch
 
 ### 1.3 Components
 
+Pull the 1.3 tag of the master branch
+
+--> open `src/containers/about/aboutUs.js`
+
+#### 1.3.1 Class Components and Lifecycle Methods
+
+Pull the 1.3.1 tag of the master branch
+
+--> open `src/containers/about/aboutClassComponent.js`
+
 
 #### React Stateless Functional Components
 
