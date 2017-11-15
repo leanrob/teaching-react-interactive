@@ -38,6 +38,12 @@ Pull the 1.2 tag of the master branch
 --> open `src/containers/about/aboutClassComponent.js`
 --> then open `src/containers/about/aboutUs.js`
 
+#### 1.2.1 State
+
+Pull the 1.2.1 tag of the master branch
+
+--> open `src/containers/home/index.js`
+
 ### 1.3 Components
 
 
