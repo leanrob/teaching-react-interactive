@@ -26,13 +26,20 @@ const Home = props => (
 
     <p><button onClick={() => props.changePage()}>Go to about page via redux</button></p>
   </div>
-)
+);
 
+/**
+ * State: Do not access it directly
+ * Below is how we access the state through Redux
+ * --> Do not access the state or manipulate it directly
+ * --> The state of the application come from the Redux Store
+ * Note: The Redux store must be the one source of truth in the application
+ */
 const mapStateToProps = state => ({
   count: state.counter.count,
   isIncrementing: state.counter.isIncrementing,
-  isDecrementing: state.counter.isDecrementing
-})
+  isDecrementing: state.counter.isDecrementing,
+});
 
 const mapDispatchToProps = dispatch => bindActionCreators({
   increment,
@@ -40,7 +47,7 @@ const mapDispatchToProps = dispatch => bindActionCreators({
   decrement,
   decrementAsync,
   changePage: () => push('/about-us')
-}, dispatch)
+}, dispatch);
 
 export default connect(
   mapStateToProps,
