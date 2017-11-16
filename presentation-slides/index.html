@@ -24,13 +24,19 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
+				<!-- ******** -->
+				<!-- Title Page Section -->
+				<!-- ******** -->
+				<section id="title">
 					<h1>React + Redux</h1>
 					<p>An introduction to the basic concepts</p>
 					<p>By: Robert Byrne </p>
 					<a href="https://github.com/leanrob/teaching-react-interactive">@leanrob</a>
 				</section>
-				<section>
+				<!-- ******** -->
+				<!-- Overview Section -->
+				<!-- ******** -->
+				<section id="overview">
 					<section>
 						<h1>Overview</h1>
 						<h3>React</h3>
@@ -69,7 +75,10 @@
 						</div>
 					</section>
 				</section>
-				<section>
+				<!-- ******** -->
+				<!-- React Section Title Page -->
+				<!-- ******** -->
+				<section id="react">
 					<h1>React</h1>
 					<p>We will cover some of the React basics including...</p>
 					<ul>
@@ -80,25 +89,114 @@
 					</ul>
 					<p style="font-size: 22px;">ps. this talk to prompt discussion and evulve over time, so chime in!</p>
 				</section>
-				<section>
+				<!-- ******** -->
+				<!-- 1.1 JSX Section -->
+				<!-- ******** -->
+				<section id="jsx">
 					<section>
 						<h1>1.1 JSX</h1>
-						<p></p>
+						<p>Files:</p>
+						<p style="font-size: 20px;">src/containers/app/index.js</p>
+						<p style="font-size: 20px;">src/containers/about/index.js</p>
+						<p style="font-size: 20px;">src/containers/about/aboutUs.js</p>
+					</section>
+					<section>
+						<h3>What is jsx?</h3>
+						<p>Simplist way to view it is html in javascript.</p>
+						<pre class="stretch" style="font-size: 20px;">
+							<code class="javascript" title="jsx counter">
+class App extends React.Component {
+    constructor(props) {
+        this.state = {
+            count: 0
+        }
+    }
+    onClick(e) {
+        this.setState({
+            count: this.state.count + 1
+        });
+    }
+    render() {
+        return (
+            <div className="counter">
+                <h1>{this.state.count}</h1>
+                <button onClick={this.onClick.bind(this)}>Count Up!!</button>
+            </div>
+        )
+    }
+}
+							</code>
+						</pre>
 					</section>
 				</section>
-				<section>
+				<!-- ******** -->
+				<!-- 1.2 Props and State Section -->
+				<!-- ******** -->
+				<section id="props">
 					<section>
 						<h1>1.2 Props and State</h1>
-						<p></p>
+						<p>Files:</p>
+						<p style="font-size: 20px;">src/containers/about/aboutClassComponent.js</p>
+						<p style="font-size: 20px;">src/containers/home/index.js</p>
+					</section>
+					<section>
+						<h2>What are props</h2>
+						<h5>Props are the input that a react component intakes</h5>
+						<ul>
+							<li>props are immutable</li>
+							<li>props only flow downward through components parent -> children</li>
+							<li>components know they need to reload when their props change</li>
+						</ul>
+					</section>
+					<section>
+						<h5>ES6 Destructuring</h5>
+						<pre class="stretch" style="font-size: 20px;">
+							<code class="javascript" title="jsx counter">
+const AboutUs = ({ name, occupation, yearsActive }) => {
+// const AboutUs = ({ props }) => {
+// const { name, occupation, yearsActive, thingsWeDo } = props;
+
+  return (
+    <div>
+      <h1>{name}</h1>
+      <p>{occupation}</p>
+      <p>{yearsActive}</p>
+      {doWeHaveJobs(thingsWeDo)}
+    </div>
+  )
+};
+
+AboutUs.propTypes = {
+  name: PropTypes.string.isRequired,
+  occupation: PropTypes.string.isRequired,
+  yearsActive: PropTypes.number,
+};
+AboutUs.defaultProps = {
+  name: "John Doe",
+  occupation: "Does Nothing",
+  yearsActive: 0,
+};
+
+export default AboutUs;
+							</code>
+						</pre>
 					</section>
 				</section>
-				<section>
+				<!-- ******** -->
+				<!-- 1.3 Components Section -->
+				<!-- ******** -->
+				<section id="components">
 					<section>
 						<h1>1.3 Components</h1>
-						<p></p>
+						<p>Files:</p>
+						<p style="font-size: 20px;">TBD</p>
+						<p style="font-size: 20px;">TBD</p>
 					</section>
 				</section>
-				<section>
+				<!-- ******** -->
+				<!-- Redux Section Title Page -->
+				<!-- ******** -->
+				<section id="redux">
 					<section>
 						<h1>Redux</h1>
 						<p>We will cover some of the Redux basics including...</p>
@@ -115,29 +213,56 @@
 					</p>
 					</section>
 				</section>
-				<section>
+				<!-- ******** -->
+				<!-- 2.1 Actions Section -->
+				<!-- ******** -->
+				<section id="actions">
 					<section>
 						<h1>2.1 Actions</h1>
-						<p></p>
+						<p>Files:</p>
+						<p style="font-size: 20px;">TBD</p>
+						<p style="font-size: 20px;">TBD</p>
 					</section>
 				</section>
-				<section>
+				<!-- ******** -->
+				<!-- 2.2 Reducers Section -->
+				<!-- ******** -->
+				<section id="reducers">
 					<section>
 						<h1>2.2 Reducers</h1>
-						<p></p>
+						<p>Files:</p>
+						<p style="font-size: 20px;">TBD</p>
+						<p style="font-size: 20px;">TBD</p>
 					</section>
 				</section>
-				<section>
+				<!-- ******** -->
+				<!-- 2.3 Store Section -->
+				<!-- ******** -->
+				<section id="store">
 					<section>
 						<h1>2.3 Store</h1>
-						<p></p>
+						<p>Files:</p>
+						<p style="font-size: 20px;">TBD</p>
+						<p style="font-size: 20px;">TBD</p>
 					</section>
 				</section>
-				<section>
+				<!-- ******** -->
+				<!-- 2.4 Data Flow Section -->
+				<!-- ******** -->
+				<section id="data-flow">
 					<section>
 						<h1>2.4 Data Flow</h1>
-						<p></p>
+						<p>Files:</p>
+						<p style="font-size: 20px;">TBD</p>
+						<p style="font-size: 20px;">TBD</p>
 					</section>
+				</section>
+				<!-- ******** -->
+				<!-- Final Slide -->
+				<!-- ******** -->
+				<section>
+					<h1>FIN</h1>
+					<a href="#/title">[ctrl + c]</a>
 				</section>
 				<section>
 					<section>
@@ -161,10 +286,6 @@
 							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
 						</a>
 					</section>
-				</section>
-				<section>
-					<h1>FIN</h1>
-					[ctrl + c]
 				</section>
 			</div>
 		</div>
