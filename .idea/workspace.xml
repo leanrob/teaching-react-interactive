@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="051210f4-a8c8-4bd2-8698-74a44d7380b8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/presentation-slides/bower.json" afterPath="$PROJECT_DIR$/presentation-slides/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/presentation-slides/css/reveal.css" afterPath="$PROJECT_DIR$/presentation-slides/css/reveal.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/presentation-slides/css/reveal.scss" afterPath="$PROJECT_DIR$/presentation-slides/css/reveal.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/presentation-slides/index.html" afterPath="$PROJECT_DIR$/presentation-slides/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />

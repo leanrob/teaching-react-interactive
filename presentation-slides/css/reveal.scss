@@ -417,6 +417,26 @@ body {
 				opacity 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
 }
 
+.reveal .slides>section>ol,
+.reveal .slides>section>ul,
+.reveal .slides>section>li,
+.reveal .slides>section>section>ol,
+.reveal .slides>section>section>ul,
+.reveal .slides>section>section>li,
+.reveal .slides>section>section>div>ol>*,
+.reveal .slides>section>section>div>ul>*,
+.reveal .slides>section>section>div>li>*,
+.reveal .slides>section>section>div>ol>*>*,
+.reveal .slides>section>section>div>ul>*>*,
+.reveal .slides>section>section>div>li>*>* {
+	list-style-type: none;
+}
+
+.reveal .slides>section>h1,
+.reveal .slides>section>section>h1 {
+	color: #60D5FB
+}
+
 /* Global transition speed settings */
 .reveal[data-transition-speed="fast"] .slides section {
 	transition-duration: 400ms;
@@ -1144,6 +1164,7 @@ body {
 
 .reveal.rtl ol,
 .reveal.rtl ul {
+	list-style-type: none;
 	text-align: right;
 }
 

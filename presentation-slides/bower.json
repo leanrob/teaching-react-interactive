@@ -1,5 +1,5 @@
 {
-  "name": "reveal.js",
+  "name": "React Interactive Presentation",
   "version": "3.5.0",
   "main": [
     "js/reveal.js",

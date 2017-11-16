@@ -4,13 +4,15 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>React Interactive Presentation : Rob Byrne</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -143,9 +145,9 @@ class App extends React.Component {
 						<h2>What are props</h2>
 						<h5>Props are the input that a react component intakes</h5>
 						<ul>
-							<li>props are immutable</li>
-							<li>props only flow downward through components parent -> children</li>
-							<li>components know they need to reload when their props change</li>
+							<li>> <span>props are immutable</span></li>
+							<li>> <span>props only flow downward through components parent -> children</span></li>
+							<li>> <span>components know they need to reload when their props change</span></li>
 						</ul>
 					</section>
 					<section>
@@ -180,6 +182,17 @@ AboutUs.defaultProps = {
 export default AboutUs;
 							</code>
 						</pre>
+					</section>
+					<section>
+						<h1>1.2.1 State</h1>
+						<div>
+							<p>State is what decides when and how a react component updates</p>
+							<h5><span style="color: #60D5FB">CAN</span> state be manipulated directly?</h5>
+							<p style="font-size: 20px;">yes.</p>
+							<h5><span style="color: #60D5FB">SHOULD</span> we manipulate the state directly</h5>
+							<p>NO.</p>
+							<p style="font-size: 18px;">More on this when we look at <a href="#/redux">Redux</a></p>
+						</div>
 					</section>
 				</section>
 				<!-- ******** -->
