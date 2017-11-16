@@ -404,6 +404,11 @@ body {
 .reveal .slides > section > section.future {
   opacity: 0; }
 
+.reveal .slides > section > h1,
+.reveal .slides > section > section > h1 {
+  color: #5DD6FB;
+}
+
 /*********************************************
  * Mixins for readability of transitions
  *********************************************/
