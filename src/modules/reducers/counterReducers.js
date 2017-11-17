@@ -9,7 +9,16 @@ const initialState = {
 	isDecrementing: false
 }
 
-const counter = (state = initialState, action) => {
+/**
+ * This function defines the reducers in this counter file
+ * --> Multiple of these reducers may be called when an action is called by the UI.
+ * --> This way we do not need to remember to run successions of reductions and actions to perform a desired outcome
+ * --> Each reducer first starts with the state that is spread out, then things are added or changed in it.
+ * --> State is always returned and is the default return if the action is not found
+ * @param state
+ * @param action
+ * @returns {*}
+ */ const counter = (state = initialState, action) => {
 	switch (action.type) {
 		case INCREMENT_REQUESTED:
 			return {

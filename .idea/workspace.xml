@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="051210f4-a8c8-4bd2-8698-74a44d7380b8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/presentation-slides/index.html" afterPath="$PROJECT_DIR$/presentation-slides/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/about/aboutClassComponent.js" afterPath="$PROJECT_DIR$/src/containers/about/aboutClassComponent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/home/index.js" afterPath="$PROJECT_DIR$/src/containers/home/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/counter.js" afterPath="$PROJECT_DIR$/src/modules/counter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/index.js" afterPath="$PROJECT_DIR$/src/modules/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/reducers/counterReducers.js" afterPath="$PROJECT_DIR$/src/modules/reducers/counterReducers.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -75,21 +71,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="counterActions.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="counterActions.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modules/actions/counterActions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-231">
+            <state relative-caret-position="506">
               <caret line="22" column="1" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="22" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="counterReducers.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="counterReducers.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/modules/reducers/counterReducers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="35" column="39" lean-forward="true" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+            <state relative-caret-position="1242">
+              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -330,7 +326,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22722000" />
+    <option name="totallyTimeSpent" value="22873000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="979" extended-state="0" />
@@ -817,18 +813,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/reducers/counterReducers.js">
+    <entry file="file://$PROJECT_DIR$/src/modules/actions/counterActions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="35" column="39" lean-forward="true" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+        <state relative-caret-position="506">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="22" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/actions/counterActions.js">
+    <entry file="file://$PROJECT_DIR$/src/modules/reducers/counterReducers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-231">
-          <caret line="22" column="1" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="22" selection-end-column="1" />
+        <state relative-caret-position="1242">
+          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding />
         </state>
       </provider>
