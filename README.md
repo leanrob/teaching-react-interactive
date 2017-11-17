@@ -17,7 +17,7 @@ To start the project it is as easy as running the one following commend..
 
 `yarn start`
 
-Then opening `localhost:3000` or 3002 is 300 was taken.
+Then opening `localhost:3000` or 3001/3002 is port 3000 was taken.
 
 ### Running the slides (Reveal.js Presentation)
 
@@ -31,7 +31,7 @@ Open your browser to `localhost:8000`
 
 ### 1.1 JSX
 
-Pull the 1.1 Tag of the master branch
+Pull the v1.1 Tag of the master branch
 
 --> Open the file `src/app/index.js`
 
@@ -41,31 +41,59 @@ Pull the 1.1 Tag of the master branch
 
 ### 1.2 Props and State
 
-Pull the 1.2 tag of the master branch
+Pull the v1.2 tag of the master branch
 
 --> open `src/containers/about/aboutClassComponent.js`
 --> then open `src/containers/about/aboutUs.js`
 
 #### 1.2.1 State
 
-Pull the 1.2.1 tag of the master branch
+Pull the v1.2.1 tag of the master branch
 
 --> open `src/containers/home/index.js`
 
 ### 1.3 Components
 
-Pull the 1.3 tag of the master branch
+Pull the v1.3 tag of the master branch
 
 --> open `src/containers/about/aboutUs.js`
 
 #### 1.3.1 Class Components and Lifecycle Methods
 
-Pull the 1.3.1 tag of the master branch
+Pull the v1.3.1 tag of the master branch
 
 --> open `src/containers/about/aboutClassComponent.js`
 
 
-#### React Stateless Functional Components
+## Chapter 2 Redux Basics
+
+### 2.1 Actions
+
+Pull the v2.1 tag of the master branch
+
+--> open src/modules/actions/counterActions.js
+--> open src/modules/index.js
+--> open src/containers/home/index.js
+
+### 2.2 Reducers
+
+Pull the v2.2 tag of the master branch
+
+--> open src/modules/actions/counterActions.js
+--> open src/modules/actions/counterReducers.js
+--> open src/modules/index.js
+--> open src/containers/home/index.js
+
+### 2.3 Store
+
+
+
+
+### 2.4 Data Flow
+
+
+
+
 
 
 
