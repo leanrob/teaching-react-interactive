@@ -1,5 +1,8 @@
 # Teaching React Interactive
 
+![React + Redux](./presentation-slides/assets/images/ReactRedux.png)
+### React + Redux
+
 > An interactive tutorial to knowledge share some basic React+Redux knowledge.
 
 ## Setting up the project
