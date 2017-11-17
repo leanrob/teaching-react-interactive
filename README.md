@@ -93,12 +93,3 @@ Pull the v2.3 tag from master branch
 --> open `src/store.js`
 
 ### 2.4 Data Flow
-
-
-
-
-
-
-
-
-#### React Class Container Components

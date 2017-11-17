@@ -369,11 +369,19 @@ export default counter;</code>
 					<section>
 						<h1>2.4 Data Flow</h1>
 						<p>Files:</p>
-						<p style="font-size: 20px;">TBD</p>
-						<p style="font-size: 20px;">TBD</p>
+						<p style="font-size: 20px;">All of them...</p>
 					</section>
 					<section>
+						<h3>Redux Data Flow</h3>
 						<img src="./assets/images/Redux-DataFlow.gif" alt="Redux Data Flow">
+					</section>
+					<section>
+						<ul>
+							<li>1. Call store.Dispatch() with the an action</li>
+							<li>2. Reducer called based on the action above</li>
+							<li>3. Root reducer may combine output of multiple reducers into single state</li>
+							<li>4. Return new state tree to the application</li>
+						</ul>
 					</section>
 				</section>
 				<section id="apendix">
