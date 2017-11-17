@@ -26,6 +26,13 @@ const composedEnhancers = compose(
   ...enhancers
 )
 
+/**
+ * Store: Bringing it all together
+ * --> Store brings the reducers, the initial State and the middleware
+ * --> Allows access to the state which is set by the reducers
+ * --> Store is accessed through the applications
+ * @type {Store<{}>}
+ */
 const store = createStore(
   rootReducer,
   initialState,

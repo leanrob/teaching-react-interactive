@@ -37,6 +37,8 @@ Pull the v1.1 Tag of the master branch
 
 #### 1.1.1 Logic to choose components
 
+Pull the v1.1.1 tag from the master branch
+
 --> Open file `src/containers/about/aboutUs.js`
 
 ### 1.2 Props and State
@@ -71,23 +73,24 @@ Pull the v1.3.1 tag of the master branch
 
 Pull the v2.1 tag of the master branch
 
---> open src/modules/actions/counterActions.js
---> open src/modules/index.js
---> open src/containers/home/index.js
+--> open `src/modules/actions/counterActions.js`
+--> open `src/modules/index.js`
+--> open `src/containers/home/index.js`
 
 ### 2.2 Reducers
 
 Pull the v2.2 tag of the master branch
 
---> open src/modules/actions/counterActions.js
---> open src/modules/actions/counterReducers.js
---> open src/modules/index.js
---> open src/containers/home/index.js
+--> open `src/modules/actions/counterActions.js`
+--> open `src/modules/actions/counterReducers.js`
+--> open `src/modules/index.js`
+--> open `src/containers/home/index.js`
 
 ### 2.3 Store
 
+Pull the v2.3 tag from master branch
 
-
+--> open `src/store.js`
 
 ### 2.4 Data Flow
 
