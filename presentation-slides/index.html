@@ -129,6 +129,10 @@ class App extends React.Component {
 }
 							</code>
 						</pre>
+						<aside class="notes">
+							The JSX must me rendered in the end.
+							Other smaller components can sinply return some jsx which will eventually be rendered by a parent component.
+						</aside>
 					</section>
 				</section>
 				<!-- ******** -->
@@ -202,8 +206,21 @@ export default AboutUs;
 					<section>
 						<h1>1.3 Components</h1>
 						<p>Files:</p>
-						<p style="font-size: 20px;">TBD</p>
-						<p style="font-size: 20px;">TBD</p>
+						<p style="font-size: 20px;">src/containers/about/aboutClassComponent.js</p>
+						<p style="font-size: 20px;">src/containers/about/aboutUs.js</p>
+					</section>
+					<section>
+						<h2>Class Component</h2>
+						<p>Allows for lifecycle methodes.</p>
+						<p>Should not be overused</p>
+						<p style="font-size: 18px; color: #60D5FB">See file `src/containers/about/aboutClassComponent.js`</p>
+					</section>
+					<section>
+						<h2>Stateless Functional Components</h2>
+						<p>Very easy to initialize and control.</p>
+						<p>Easy to pass props into.</p>
+						<p style="font-size: 18px">See <a href="https://hackernoon.com/react-stateless-functional-components-nine-wins-you-might-have-overlooked-997b0d933dbc">https://hackernoon.com/react-stateless-functional-components-nine-wins-you-might-have-overlooked-997b0d933dbc</a> for more.</p>
+						<p style="font-size: 18px; color: #60D5FB">See file `src/containers/about/aboutUs.js`</p>
 					</section>
 				</section>
 				<!-- ******** -->
@@ -225,6 +242,19 @@ export default AboutUs;
 						for more details.
 					</p>
 					</section>
+					<section>
+						<h2 style="color: #60D5FB">Redux Concepts</h2>
+						<h4><span style="text-decoration: underline;">3</span> Things to consider</h5>
+						<p>1. The Store is the single source of truth</p>
+						<aside class="notes">
+							1: This is why we never manipulate the state directly, it violates this principle. Leading to 2...
+						</aside>
+						<p>2. State is Read-Only</p>
+						<p>3. Reducers (pure functions) make al changes</p>
+						<aside class="notes">
+							3: More on this in the reducers section
+						</aside>
+					</section>
 				</section>
 				<!-- ******** -->
 				<!-- 2.1 Actions Section -->
@@ -235,6 +265,19 @@ export default AboutUs;
 						<p>Files:</p>
 						<p style="font-size: 20px;">TBD</p>
 						<p style="font-size: 20px;">TBD</p>
+					</section>
+					<section>
+						<h3>What are actions?</h3>
+						<p>Actions are PAYLOADS of INFORMATION</p>
+						<p>They (and only they) pass data from the application to the store</p>
+						<p>These payloads are sent using...</p>
+						<pre style="font-size: 20px;">
+							<code class="javascript" title="dispatch to store">store.dispatch();</code>
+						</pre>
+					</section>
+					<section>
+						<h3></h3>
+						<pre style="font-size: 20px;"><code class="javascript" title="action"></code></pre>
 					</section>
 				</section>
 				<!-- ******** -->
@@ -269,6 +312,18 @@ export default AboutUs;
 						<p style="font-size: 20px;">TBD</p>
 						<p style="font-size: 20px;">TBD</p>
 					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Apendix</h1>
+					</section>
+					<section>
+						<h1>How we model components</h1>
+						<p>[This section is handled best with a whiteboard example.]</p>
+						<p>Pick a scrren or component that is common and then break it down.</p>
+						<p>What data is needed? What actions need to be performed?...</p>
+					</section>
+					<section></section>
 				</section>
 				<!-- ******** -->
 				<!-- Final Slide -->
