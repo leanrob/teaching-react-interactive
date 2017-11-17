@@ -3,52 +3,6 @@ export const INCREMENT = 'counter/INCREMENT'
 export const DECREMENT_REQUESTED = 'counter/DECREMENT_REQUESTED'
 export const DECREMENT = 'counter/DECREMENT'
 
-const initialState = {
-	count: 0,
-	isIncrementing: false,
-	isDecrementing: false
-}
-
-/**
- * This file is not used in the project
- * --> it is the combination of the reducers and actions in the expanded folders.
- * @param state
- * @param action
- * @returns {*}
- */
-export default (state = initialState, action) => {
-	switch (action.type) {
-		case INCREMENT_REQUESTED:
-			return {
-				...state,
-				isIncrementing: true
-			}
-
-		case INCREMENT:
-			return {
-				...state,
-				count: state.count + 1,
-				isIncrementing: !state.isIncrementing
-			}
-
-		case DECREMENT_REQUESTED:
-			return {
-				...state,
-				isDecrementing: true
-			}
-
-		case DECREMENT:
-			return {
-				...state,
-				count: state.count - 1,
-				isDecrementing: !state.isDecrementing
-			}
-
-		default:
-			return state
-	}
-}
-
 /**
  * This is an example of a set of actions action we would call to increment the counter
  * --> It combines the 2 actions together into a pure exported function

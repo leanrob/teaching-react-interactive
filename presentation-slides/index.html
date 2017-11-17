@@ -263,8 +263,9 @@ export default AboutUs;
 					<section>
 						<h1>2.1 Actions</h1>
 						<p>Files:</p>
-						<p style="font-size: 20px;">TBD</p>
-						<p style="font-size: 20px;">TBD</p>
+						<p style="font-size: 20px;">src/modules/actions/counterActions.js</p>
+						<p style="font-size: 20px;">src/modules/index.js</p>
+						<p style="font-size: 20px;">src/containers/home/index.js</p>
 					</section>
 					<section>
 						<h3>What are actions?</h3>
@@ -277,7 +278,24 @@ export default AboutUs;
 					</section>
 					<section>
 						<h3></h3>
-						<pre style="font-size: 20px;"><code class="javascript" title="action"></code></pre>
+						<pre style="font-size: 20px;">
+							<code class="javascript" title="action">export const INCREMENT_REQUESTED = 'counter/INCREMENT_REQUESTED'
+export const INCREMENT = 'counter/INCREMENT'
+export const DECREMENT_REQUESTED = 'counter/DECREMENT_REQUESTED'
+export const DECREMENT = 'counter/DECREMENT'
+
+export const increment = () => {
+	return dispatch => {
+		dispatch({
+			type: INCREMENT_REQUESTED
+		})
+
+		dispatch({
+			type: INCREMENT
+		})
+	}
+}</code>
+						</pre>
 					</section>
 				</section>
 				<!-- ******** -->
@@ -287,8 +305,42 @@ export default AboutUs;
 					<section>
 						<h1>2.2 Reducers</h1>
 						<p>Files:</p>
-						<p style="font-size: 20px;">TBD</p>
-						<p style="font-size: 20px;">TBD</p>
+						<p style="font-size: 20px;">src/modules/actions/counterActions.js</p>
+						<p style="font-size: 20px;">src/modules/reducers/counterReducers.js</p>
+						<p style="font-size: 20px;">src/modules/index.js</p>
+						<p style="font-size: 20px;">src/containers/home/index.js</p>
+					</section>
+					<section>
+						<h3>What do reducers do?</h3>
+						<p>> They spead out the current or initial state</p>
+						<p>-> They manipulate or add to the state</p>
+						<p>--> They return the new state</p>
+						<p>[state is <span style="color: #60D5FB">never</span> manipulated, a new state is always made and supplied]</p>
+					</section>
+					<section>
+						<h3>Simple Reducer Example</h3>
+						<pre class="stretch" style="font-size: 20px;">
+							<code class="javascript" title="dispatch to store">const counter = (state = initialState, action) => {
+	switch (action.type) {
+		case INCREMENT:
+			return {
+				...state,
+				count: state.count + 1,
+				isIncrementing: !state.isIncrementing
+			}
+		case DECREMENT:
+			return {
+				...state,
+				count: state.count - 1,
+				isDecrementing: !state.isDecrementing
+			}
+
+		default:
+			return state
+	}
+}
+export default counter;</code>
+						</pre>
 					</section>
 				</section>
 				<!-- ******** -->
@@ -313,7 +365,7 @@ export default AboutUs;
 						<p style="font-size: 20px;">TBD</p>
 					</section>
 				</section>
-				<section>
+				<section id="apendix">
 					<section>
 						<h1>Apendix</h1>
 					</section>
@@ -323,7 +375,11 @@ export default AboutUs;
 						<p>Pick a scrren or component that is common and then break it down.</p>
 						<p>What data is needed? What actions need to be performed?...</p>
 					</section>
-					<section></section>
+					<section>
+						<h1>Redux Devtools</h1>
+						<p><a href="https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en">Reducx DevTools</a></p>
+						<p>By: zalmoxisus</p>
+					</section>
 				</section>
 				<!-- ******** -->
 				<!-- Final Slide -->

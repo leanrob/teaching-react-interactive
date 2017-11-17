@@ -10,7 +10,6 @@ export class AboutUsClassComponent extends Component {
 
 	constructor(props) {
 	  super(props)
-      this.handleClick = this.handleClick.bind(this)
   }
 
 	// This one will show on page load
