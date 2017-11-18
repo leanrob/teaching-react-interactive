@@ -8,25 +8,40 @@ import {
   decrement,
   decrementAsync
 } from '../../modules/actions/counterActions'
+import {
+  updateName
+} from '../../modules/actions/personActions'
 
-const Home = ({ count, increment, incrementAsync, isIncrementing, decrement, isDecrementing, decrementAsync, changePage}) => (
-  <div>
-    <h1>Home</h1>
-    <p>Count: {count}</p>
+const Home = ({ count, increment, incrementAsync, isIncrementing, decrement, isDecrementing, decrementAsync, changePage, name, updateName}) => {
 
-    <p>
-      <button onClick={increment} disabled={isIncrementing}>Increment</button>
-      <button onClick={incrementAsync} disabled={isIncrementing}>Increment Async</button>
-    </p>
+  return (
+    <div>
+      <h1>Home</h1>
+      <p>Count: {count}</p>
 
-    <p>
-      <button onClick={decrement} disabled={isDecrementing}>Decrementing</button>
-      <button onClick={decrementAsync} disabled={isDecrementing}>Decrement Async</button>
-    </p>
+      <p>
+        <button onClick={increment} disabled={isIncrementing}>Increment</button>
+        <button onClick={incrementAsync} disabled={isIncrementing}>Increment Async</button>
+      </p>
 
-    <p><button onClick={() => changePage()}>Go to about page via redux</button></p>
-  </div>
-);
+      <p>
+        <button onClick={decrement} disabled={isDecrementing}>Decrementing</button>
+        <button onClick={decrementAsync} disabled={isDecrementing}>Decrement Async</button>
+      </p>
+
+      <p>
+        <button onClick={() => changePage()}>Go to about page via redux</button>
+      </p>
+
+      <button onClick={() => updateName("Robert")}>Rob</button>
+      <button onClick={() => updateName("Not Robert")}>NOT Rob</button>
+      
+      <p>{name}</p>
+
+      {name}
+    </div>
+  )
+};
 
 /**
  * State: Do not access it directly
@@ -39,6 +54,7 @@ const mapStateToProps = state => ({
   count: state.counter.count,
   isIncrementing: state.counter.isIncrementing,
   isDecrementing: state.counter.isDecrementing,
+  name: state.person.name ? state.person.name : "Rob"
 });
 
 const mapDispatchToProps = dispatch => bindActionCreators({
@@ -46,7 +62,8 @@ const mapDispatchToProps = dispatch => bindActionCreators({
   incrementAsync,
   decrement,
   decrementAsync,
-  changePage: () => push('/about-us')
+  changePage: () => push('/about-us'),
+  updateName
 }, dispatch);
 
 export default connect(

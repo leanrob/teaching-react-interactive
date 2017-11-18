@@ -2,17 +2,20 @@ import React from 'react';
 import { Route, Link } from 'react-router-dom'
 import Home from '../home'
 import About from '../about'
+import Redux from '../redux'
 
 const App = () => (
   <div className="main">
     <header>
       <Link to="/">Home</Link>
       <Link to="/about-us">About</Link>
+      <Link to="/redux">Redux</Link>
     </header>
 
     <main>
       <Route exact path="/" component={Home} />
       <Route exact path="/about-us" component={About} />
+      <Route exact path="/redux" component={Redux} />
     </main>
     {/*This is how you comment code in JSX*/}
   </div>

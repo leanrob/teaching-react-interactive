@@ -18,7 +18,9 @@ const initialState = {
  * @param state
  * @param action
  * @returns {*}
- */ const counter = (state = initialState, action) => {
+ */
+
+const counter = (state = initialState, action) => {
 	switch (action.type) {
 		case INCREMENT_REQUESTED:
 			return {
