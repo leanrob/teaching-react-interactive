@@ -96,3 +96,25 @@ Pull the v2.3 tag from master branch
 --> open `src/store.js`
 
 ### 2.4 Data Flow
+
+## The future expansion of this talk
+
+### Testing
+
+Testing in both React and Redux should have a runthrough.
+- Redux testing may prove to be easier to explain in the sample project that React testing.
+- Both should be explored at some level
+
+Enzyme should be used since it is used in production and adds a lot of useful syntax that Jest does not have.
+
+Mocha, Chai should maybe also have some form of explanation as well in the presentation.
+
+? Are any of these requirements or should a quick run-through be done of each?
+
+### Rules and guidelines
+
+List some rules and guidelines to writing good React and Redux code.
+- List the idea
+- Explain what makes it a good pattern
+- Explain why other patterns are not as good
+- maybe, show other patterns and how they work
