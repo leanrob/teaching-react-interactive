@@ -1,13 +1,23 @@
 # Teaching React Interactive
 
 ![React + Redux](./presentation-slides/assets/images/ReactRedux.png)
-### React + Redux
+## React + Redux
 
 > An interactive tutorial to knowledge share some basic React+Redux knowledge.
 
+## A Note On Git Tags
+
+This project is split up into tags since it is meant to be able to follow along without the worry of getting lost or behind.
+
+If you find your code is not working then just pull the next sections tag and be on your way.
+
+See the link below for more information about git tags:
+
+[https://git-scm.com/book/en/v2/Git-Basics-Tagging]
+
 ## Setting up the project
 
-### Prerequisits
+### Prerequisites
 
 Install the following Chrome extensions..
 
@@ -101,7 +111,7 @@ Pull the v2.3 tag from master branch
 
 ### Testing
 
-Testing in both React and Redux should have a runthrough.
+Testing in both React and Redux should have a run-through.
 - Redux testing may prove to be easier to explain in the sample project that React testing.
 - Both should be explored at some level
 
